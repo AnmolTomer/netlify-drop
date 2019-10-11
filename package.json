@@ -1,0 +1,19 @@
+{
+  "name": "netlify-drop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:AnmolTomer/netlify-drop.git",
+  "author": "AnmolTomer <anmol3540@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^1.12.4"
+  },
+  "dependencies": {
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  },
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  }
+}
