@@ -1,3 +1,8 @@
 [build]
 command = "yarn build"
 publish = "dist"
+functions = "functions"
+[dev]
+port = 1234
+command = "yarn start"
+publish = "src"
