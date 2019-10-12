@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html",
+    "build": "parcel build src/index.html src/contact.html src/thankyou.html",
     "postinstall": "netlify-lambda install"
   }
 }
