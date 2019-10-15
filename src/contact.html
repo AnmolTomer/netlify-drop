@@ -11,6 +11,12 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <style>
+      .hidden {
+        /* To tell netlify this is a honeypot field : Anything with bot-field is honeypot.*/
+        opacity: 0;
+      }
+    </style>
   </head>
   <body>
     <div class="titan-background">
@@ -26,7 +32,17 @@
         <h2>
           CONTACT US
         </h2>
-        <form name="form_2" netlify action="/thankyou">
+        <form
+          name="form_2"
+          netlify-honeypot="bot-field"
+          netlify
+          action="/thankyou"
+        >
+          <p class="hidden">
+            <label
+              >Don't fill this out if you are human. <input name="bot-field"
+            /></label>
+          </p>
           <p>
             <label>Name <input type="text" name="name"/></label>
           </p>
